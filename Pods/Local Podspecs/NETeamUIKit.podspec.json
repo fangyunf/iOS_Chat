@@ -1,0 +1,31 @@
+{
+  "name": "NETeamUIKit",
+  "version": "9.7.0",
+  "summary": "Netease XKit",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://netease.im",
+  "license": {
+    "type": "Copyright",
+    "text": " Copyright 2022 Netease "
+  },
+  "authors": "yunxin engineering department",
+  "source": {
+    "git": "https://github.com/netease/NEKitGroupUI.git",
+    "tag": "9.7.0"
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "BUILD_LIBRARY_FOR_DISTRIBUTION": "YES"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "NETeamUIKit/Classes/**/*",
+  "resources": "NETeamUIKit/Assets/**/*",
+  "dependencies": {
+    "NECommonUIKit": [],
+    "NEChatKit": []
+  },
+  "swift_version": "5.0"
+}

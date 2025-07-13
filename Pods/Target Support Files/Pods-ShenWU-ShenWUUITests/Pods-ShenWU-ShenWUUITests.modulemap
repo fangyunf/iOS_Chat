@@ -1,0 +1,6 @@
+framework module Pods_ShenWU_ShenWUUITests {
+  umbrella header "Pods-ShenWU-ShenWUUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

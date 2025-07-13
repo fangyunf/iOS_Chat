@@ -1,0 +1,135 @@
+//
+//  SWPrefixHeader.pch
+//  ShenWU
+//
+//  Created by Amy on 2024/6/19.
+//
+
+#ifndef SWPrefixHeader_pch
+#define SWPrefixHeader_pch
+
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import <YYKit/YYKit.h>
+#import <NIMSDK/NIMSDK.h>
+#import "FNavViewController.h"
+#import "FControlTool.h"
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "UITableView+Empty.h"
+#import "UIButton+Extension.h"
+#import "UIFont+Extension.h"
+#import "AppDelegate.h"
+#import "FAppManager.h"
+#import "SWCommonInputView.h"
+#import "FHtmlViewController.h"
+#import "NSObject+YXInit.h"
+#import <NEConversationUIKit/NEConversationUIKit-Swift.h>
+#import <NEContactUIKit/NEContactUIKit-Swift.h>
+#import <NEChatUIKit/NEChatUIKit-Swift.h>
+#import <NETeamUIKit/NETeamUIKit-Swift.h>
+#import <NECoreKit/NECoreKit-Swift.h>
+#import <NECoreIMKit/NECoreIMKit-Swift.h>
+#import <NEChatKit/NEChatKit-Swift.h>
+#import <SDWebImage/SDWebImage.h>
+#import "FMessageManager.h"
+#import "FDataTool.h"
+#import "FNetworkManager.h"
+#import "AESUtil.h"
+#import "FVerifyCodeManager.h"
+#import "SVProgressHUD.h"
+#import "FUserModel.h"
+#import "FFriendModel.h"
+#import "FUserRelationManager.h"
+#import "FIndexModel.h"
+#import "FPayPasswordView.h"
+#import "TKPaySucceseAlertView.h"
+#import "UITableViewCell+CellRound.h"
+
+#define kAppDelegate ((AppDelegate*)[UIApplication sharedApplication].delegate)
+
+#define kStatusBarHeight (CGFloat)(IPHONE_X?(44.0):(20.0))
+
+#define kNavBarHeight (44)
+
+#define kScale kScreenWidth/375
+
+#define kTopHeight (CGFloat)(IPHONE_X?(kStatusHeight+44):(kStatusHeight+44))
+
+#define kTabBarHeight (CGFloat)(IPHONE_X?(49.0 + 34.0):(49.0))
+
+#define kBottomSafeHeight (CGFloat)(IPHONE_X?(34.0):(0))
+
+#define kNavAndTabHeight (kNavBarAndStatusBarHeight + kTabBarHeight)
+#define kNavAndBottomSafeHeight (kNavBarAndStatusBarHeight + kBottomSafeHeight)
+
+#define kStatusHeight [UIApplication sharedApplication].statusBarFrame.size.height
+
+#define IPHONE_X \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+#define RGBColor(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define RGBAlphaColor(rgbValue, Alpha) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:Alpha]
+
+#define kMainColor RGBColor(0x8F55FF)
+
+#define FormattingObject(object) [FDataTool isNull:object]?@"":object
+
+#pragma mark - Loca
+
+#define kUserDefaultSetObjectForKey(__VALUE__,__KEY__) \
+{\
+[[NSUserDefaults standardUserDefaults] setObject:__VALUE__ forKey:__KEY__];\
+[[NSUserDefaults standardUserDefaults] synchronize];\
+}
+
+#define kUserDefaultObjectForKey(__KEY__)  [[NSUserDefaults standardUserDefaults] objectForKey:__KEY__]
+
+#define kUserDefaultRemoveObjectForKey(__KEY__) \
+{\
+[[NSUserDefaults standardUserDefaults] removeObjectForKey:__KEY__];\
+[[NSUserDefaults standardUserDefaults] synchronize];\
+}
+
+#define UserToken @"CurrentUserToken"
+
+#define SYSNOTINUM @"SYSNOTINUM"
+
+#pragma mark - Noti
+
+#define FLoginSuccess @"Login_Success_Account"
+#define FIMLoginSuccess @"FIMLoginSuccess"
+#define FLoginOut @"User_LoginOut"
+#define FChangeUserLogin @"Login_ChangeUser"
+#define FRefreshFriendList @"RefreshFriendList"
+#define FRefreshUnReadCount @"RefreshUnReadCount"
+#define FClearMsgRecord @"ClearMsgRecord"
+#define FTopInfoChange @"TopInfoChange"
+#define FAideNewsIsUnread @"aideNewsIsUnread"
+#define FRefreshRechargeResult @"RefreshRechargeResult"
+#define CrackOpenEgg @"CrackOpenEgg"
+#define GiveOutEggs @"GiveOutEggs"
+#define RefreshBalance @"RefreshBalance"
+
+#define IMKey @"f5b952481a1d0455ae075ba535c40538"
+
+#define JiGuangVerifyKey @"46b799ae1b2af9862b36c93e"
+#define VerifyKey @"625a195c7e8040818be10e28367b02ec"
+
+#define AppBuildVersion [NSString stringWithFormat:@"1.0.%@",[[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleVersion"]]
+
+#define AppName [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleDisplayName"]
+
+#define AppVersion [NSString stringWithFormat:@"%@ (%@)",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleVersion"]]
+#endif /* SWPrefixHeader_pch */

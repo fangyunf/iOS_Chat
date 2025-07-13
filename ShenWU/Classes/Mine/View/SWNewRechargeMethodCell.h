@@ -1,0 +1,19 @@
+//
+//  SWNewRechargeMethodCell.h
+//  ShenWU
+//
+//  Created by Amy on 2025/2/12.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface SWNewRechargeMethodCell : UITableViewCell
+@property(nonatomic, strong) UIImageView *icnImgView;
+@property(nonatomic, strong) UILabel *titleLabel;
+@property(nonatomic, strong) UIImageView *selectImgView;
+@property(nonatomic, assign) BOOL isSelected;
+@end
+
+NS_ASSUME_NONNULL_END

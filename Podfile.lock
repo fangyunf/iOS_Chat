@@ -1,0 +1,228 @@
+PODS:
+  - AlipaySDK-iOS (15.8.16)
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.8.2)
+  - AMapLocation (2.10.0):
+    - AMapFoundation (>= 1.8.0)
+  - AMapSearch (9.7.0):
+    - AMapFoundation (>= 1.8.0)
+  - AvoidCrash (2.5.2)
+  - CocoaLumberjack (3.8.5):
+    - CocoaLumberjack/Core (= 3.8.5)
+  - CocoaLumberjack/Core (3.8.5)
+  - CryptoSwift (1.8.2)
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
+  - FLAnimatedImage (1.0.17)
+  - IQKeyboardManager (6.5.19)
+  - JXCategoryView (1.6.8)
+  - JXPagingView/Pager (2.1.3)
+  - libwebp (1.3.2):
+    - libwebp/demux (= 1.3.2)
+    - libwebp/mux (= 1.3.2)
+    - libwebp/sharpyuv (= 1.3.2)
+    - libwebp/webp (= 1.3.2)
+  - libwebp/demux (1.3.2):
+    - libwebp/webp
+  - libwebp/mux (1.3.2):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.2)
+  - libwebp/webp (1.3.2):
+    - libwebp/sharpyuv
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.6)
+  - NEChatKit (9.7.0):
+    - NEChatKit/NOS (= 9.7.0)
+  - NEChatKit/NOS (9.7.0):
+    - NECommonKit (= 9.6.6)
+    - NECoreIMKit/NOS (= 9.6.7)
+    - NIMSDK_LITE (= 9.14.2)
+    - YXAlog (= 1.0.7)
+  - NEChatUIKit (9.7.0):
+    - CryptoSwift
+    - lottie-ios (= 2.5.3)
+    - MJRefresh
+    - NEChatKit
+    - NECommonKit
+    - NECommonUIKit
+    - SDWebImageSVGKitPlugin
+    - SDWebImageWebPCoder
+  - NECommonKit (9.6.6):
+    - YXAlog
+  - NECommonUIKit (9.6.7):
+    - NECommonKit
+    - SDWebImage
+    - YXAlog
+  - NEContactUIKit (9.7.0):
+    - NEChatKit
+    - NECommonUIKit
+  - NEConversationUIKit (9.7.0):
+    - NEChatKit
+    - NECommonUIKit
+  - NECoreIMKit (9.6.7):
+    - NECoreIMKit/NOS (= 9.6.7)
+  - NECoreIMKit/NOS (9.6.7):
+    - NECoreKit (= 9.6.6)
+    - NIMSDK_LITE (= 9.14.2)
+    - YXAlog (= 1.0.7)
+  - NECoreKit (9.6.6):
+    - YXAlog (= 1.0.7)
+  - NEMapKit (9.7.0):
+    - AMap2DMap
+    - AMapLocation
+    - AMapSearch
+    - NEChatKit
+    - NEChatUIKit
+  - NETeamUIKit (9.7.0):
+    - NEChatKit
+    - NECommonUIKit
+  - NIMSDK_LITE (9.14.2):
+    - NIMSDK_LITE/NOS (= 9.14.2)
+    - YXArtemis
+  - NIMSDK_LITE/NOS (9.14.2):
+    - YXArtemis
+  - NTESVerifyCode (3.6.2)
+  - Popover (1.3.0)
+  - SCIndexView (2.2.4)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+  - SDWebImageSVGKitPlugin (1.4.0):
+    - SDWebImage/Core (~> 5.10)
+    - SVGKit (~> 3.0)
+  - SDWebImageWebPCoder (0.14.6):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.17)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - YXAlog (1.0.7)
+  - YXArtemis (1.1.3)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AlipaySDK-iOS (= 15.8.16)
+  - AvoidCrash
+  - CYLTabBarController
+  - FLAnimatedImage
+  - IQKeyboardManager
+  - JXCategoryView
+  - JXPagingView/Pager
+  - Masonry
+  - MJRefresh
+  - NEChatKit (= 9.7.0)
+  - NEChatUIKit (from `NEChatUIKit/NEChatUIKit.podspec`)
+  - NECommonKit (= 9.6.6)
+  - NECommonUIKit (= 9.6.7)
+  - NEContactUIKit (from `NEContactUIKit/NEContactUIKit.podspec`)
+  - NEConversationUIKit (from `NEConversationUIKit/NEConversationUIKit.podspec`)
+  - NECoreIMKit (= 9.6.7)
+  - NECoreKit (= 9.6.6)
+  - NEMapKit (from `NEMapKit/NEMapKit.podspec`)
+  - NETeamUIKit (from `NETeamUIKit/NETeamUIKit.podspec`)
+  - NTESVerifyCode
+  - Popover
+  - SCIndexView
+  - SDCycleScrollView (= 1.80)
+  - SDWebImage
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AlipaySDK-iOS
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - AvoidCrash
+    - CocoaLumberjack
+    - CryptoSwift
+    - CYLTabBarController
+    - FLAnimatedImage
+    - IQKeyboardManager
+    - JXCategoryView
+    - JXPagingView
+    - libwebp
+    - lottie-ios
+    - Masonry
+    - MJRefresh
+    - NEChatKit
+    - NECommonKit
+    - NECommonUIKit
+    - NECoreIMKit
+    - NECoreKit
+    - NIMSDK_LITE
+    - NTESVerifyCode
+    - Popover
+    - SCIndexView
+    - SDCycleScrollView
+    - SDWebImage
+    - SDWebImageSVGKitPlugin
+    - SDWebImageWebPCoder
+    - SVGKit
+    - YXAlog
+    - YXArtemis
+    - YYKit
+
+EXTERNAL SOURCES:
+  NEChatUIKit:
+    :path: NEChatUIKit/NEChatUIKit.podspec
+  NEContactUIKit:
+    :path: NEContactUIKit/NEContactUIKit.podspec
+  NEConversationUIKit:
+    :path: NEConversationUIKit/NEConversationUIKit.podspec
+  NEMapKit:
+    :path: NEMapKit/NEMapKit.podspec
+  NETeamUIKit:
+    :path: NETeamUIKit/NETeamUIKit.podspec
+
+SPEC CHECKSUMS:
+  AlipaySDK-iOS: 5e6011fbd546e7db6b43c1f527d164ee63f3d7cb
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 9885c48fc3a78fdfb84a0299a2293e56ea3c9fec
+  AMapLocation: 5248aec2455ebb5d104b367813c946430a2ee033
+  AMapSearch: 1f24a4acee521d993a8190348d27f5765841e32a
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
+  CryptoSwift: c63a805d8bb5e5538e88af4e44bb537776af11ea
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  JXCategoryView: 262d503acea0b1278c79a1c25b7332ffaef4d518
+  JXPagingView: afdd2e9af09c90160dd232b970d603cc6e7ddd0e
+  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  NEChatKit: 3abc3f6492a74105b72cc8860f14532924017aeb
+  NEChatUIKit: 0189568818920d8c05d584cba60c71f9d9823629
+  NECommonKit: cc29fdaecf5cb6b99459c360f2536f4fab7c6fba
+  NECommonUIKit: a7c6234b40b40096df7bab266acfce546cbe69ad
+  NEContactUIKit: aa94c44964472f140c56d392f350aa37f9ac48c7
+  NEConversationUIKit: aec1e91cc788602a3649a05733a47e2d7bd988ed
+  NECoreIMKit: 7adf5a0471ae02855238be06a3b35c69c0c9f733
+  NECoreKit: 735337b345ebba581581ae4b6cbd54f27008554b
+  NEMapKit: 5f24b9d4580d0f25e6548de4285c4963b5d3142f
+  NETeamUIKit: 9c2f77d17806e41adae940e803e568a4e1d552ba
+  NIMSDK_LITE: ccc20e8fdc7436fa75c7030a50cb81169ecc7493
+  NTESVerifyCode: da56aaf87a989f1d7c1b2e280812d02fac44cf86
+  Popover: 10e1d9528f81d9504df984b7b3f491292bc1822d
+  SCIndexView: 20eba7a5ba1ffdf49a208031a82bf0549c0f9935
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  SDWebImageSVGKitPlugin: 7542dd07c344ec3415ded0461a1161a6f087e0c9
+  SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  YXAlog: ac9bab3aff1326caa72cc25aedc358bc8d4f1b31
+  YXArtemis: 2771e9ac5e5e01867914835aedb03429d135043e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: e9bf7a5611a65744dbabf43177e1aa76461a32aa
+
+COCOAPODS: 1.16.2

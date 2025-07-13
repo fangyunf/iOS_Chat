@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ShenWU-ShenWUUITests/Pods-ShenWU-ShenWUUITests-resources.sh
+${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle
+${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle
+${PODS_ROOT}/NTESVerifyCode/Assets/NTESVerifyCodeResources.bundle

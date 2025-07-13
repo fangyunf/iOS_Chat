@@ -1,0 +1,6 @@
+framework module NEConversationUIKit {
+  umbrella header "NEConversationUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
